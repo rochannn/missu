@@ -9,15 +9,16 @@
     <h1 id="message"></h1>
     <script src="script.js"></script>
     
-    <audio id="audio" autoplay>
+    <audio id="audio" autoplay="autoplay" style="display: none;">
         <source src="song.mp3" type="audio/mpeg">
     </audio>
 
     <script>
         setTimeout(function () {
             var audio = document.getElementById('audio');
+            audio.style.display = 'block'; // Show the audio element
             audio.play();
-        }, 2550);
+        }, 2550); // 2.55 seconds = 2550 milliseconds
     </script>
 </body>
 </html>
